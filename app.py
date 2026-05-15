@@ -31,6 +31,14 @@ def Ropa():
     # `render_template` busca archivos dentro de la carpeta `templates`.
     return render_template("Ropa.html")
 
+@app.route("/contacto")
+def contacto():
+    return render_template("template/contacto.html")
+
+@app.route("/acerca")
+def acerca():
+    return render_template("template/acerca.html")
+
 
 # Este bloque se ejecuta solo si corremos `python app.py` desde la terminal.
 if __name__ == "__main__":
